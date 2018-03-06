@@ -16,7 +16,7 @@ class App < Sinatra::Base
     params[:number].each do
       string = string + params[:phrase]
     end
-    string
+    return string
   end
   
   get '/say/:word1/:word2/:word3/:word4/:word5' do
