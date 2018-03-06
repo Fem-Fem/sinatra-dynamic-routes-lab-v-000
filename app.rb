@@ -28,20 +28,19 @@ class App < Sinatra::Base
     string = string + params[:word3] + " "
     string = string + params[:word4] + " "
     string = string + params[:word5] + "."
-    
   end
   
   get '/:operation/:number1/:number2' do
     operation = params[:operation]
-    if operation == "*"
-      answer = params[:number].to_i * params[:number].to_i
-    elsif operation == "+"
-      answer = params[:number].to_i + params[:number].to_i
-    elsif operation == "-"
-      answer = params[:number].to_i - params[:number].to_i
-    else
-      answer = params[:number].to_i / params[:number].to_i
-    end
+    # if operation == "*"
+    #   answer = params[:number].to_i * params[:number].to_i
+    # elsif operation == "+"
+    #   answer = params[:number].to_i + params[:number].to_i
+    # elsif operation == "-"
+    #   answer = params[:number].to_i - params[:number].to_i
+    # else
+    #   answer = params[:number].to_i / params[:number].to_i
+    # end
     return answer.to_s
   end
 end
