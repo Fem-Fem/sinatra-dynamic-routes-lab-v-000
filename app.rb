@@ -25,8 +25,12 @@ class App < Sinatra::Base
   end
   
   get '/:operation/:number1/:number2' do
+    operation = params[:operation]
     if operation == "*"
-    answer = params[:number].to_i * params[:number].to_i
+      answer = params[:number].to_i * params[:number].to_i
+    elsif operation == "+"
+      answer = params[:number].to_i * params[:number].to_i
+
 
   end
 end
