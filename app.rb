@@ -12,12 +12,10 @@ class App < Sinatra::Base
   end
   
   get '/say/:number/:phrase' do
-    counter = params[:number]
+    counter = params[:number].to_i
     string = ''
     while counter > 0
-    params[:number].each do |number|
       string = string + params[:phrase]
-    end
     return string
   end
   
