@@ -16,4 +16,5 @@ class App < Sinatra::Base
       string = string + params[:phrase]
     end
     string
+  end
 end
