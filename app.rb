@@ -30,7 +30,9 @@ class App < Sinatra::Base
       answer = params[:number].to_i * params[:number].to_i
     elsif operation == "+"
       answer = params[:number].to_i * params[:number].to_i
-
-
+    elsif operation == "+"
+      answer = params[:number].to_i * params[:number].to_i
+    else
+      answer = params[:number].to_i * params[:number].to_i
   end
 end
