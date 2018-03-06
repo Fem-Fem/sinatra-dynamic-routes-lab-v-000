@@ -13,7 +13,7 @@ class App < Sinatra::Base
   
   get '/say/:number/:phrase' do
     string = ''
-    params[:number].each do
+    params[:number].each do |number|
       string = string + params[:phrase]
     end
     return string
