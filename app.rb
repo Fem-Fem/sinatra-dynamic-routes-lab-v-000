@@ -10,5 +10,7 @@ class App < Sinatra::Base
     return "#{params[:number]}.to_i * #{params[:number].to_i}"
   end
   
-  get 
+  get '/say/:number/:phrase' do
+    string = ''
+    params[:number].each do
 end
