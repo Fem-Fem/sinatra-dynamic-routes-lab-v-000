@@ -16,6 +16,7 @@ class App < Sinatra::Base
     string = ''
     while counter > 0
       string = string + params[:phrase]
+      counter = counter - 1
     end
     return string
   end
