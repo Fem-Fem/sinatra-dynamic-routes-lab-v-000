@@ -7,5 +7,5 @@ class App < Sinatra::Base
   end
   
   get '/square/:number' do
-    return "#{params[:number}"
+    return "#{params[:number]} * #{params[:number]}"
 end
