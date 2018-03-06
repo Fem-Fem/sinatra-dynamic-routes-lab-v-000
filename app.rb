@@ -41,6 +41,6 @@ class App < Sinatra::Base
     else
       answer = params[:number].to_i / params[:number].to_i
     end
-    # return answer.to_s
+    return answer.to_s
   end
 end
